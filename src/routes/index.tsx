@@ -1,8 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 
-// Ganti URL ini dengan URL publik video MP4 kamu
-const SUPABASE_PUBLIC_VIDEO_URL = "TEMPEL_URL_PUBLIC_SUPABASE_DISINI.mp4";
+const SUPABASE_PUBLIC_VIDEO_URL =
+  "https://iwrzrhzudouhsubndord.supabase.co/storage/v1/object/public/video-romantis/Romatis.mp4";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -176,16 +176,18 @@ function Index() {
           ))}
 
           <Reveal>
-            <div className="relative mx-auto my-16 aspect-[9/16] w-full max-w-[330px] overflow-hidden rounded-3xl glass p-1">
-              <video
-                src={SUPABASE_PUBLIC_VIDEO_URL}
-                controls
-                playsInline
-                preload="metadata"
-                className="h-full w-full rounded-[22px] object-cover"
-              >
-                Browser kamu tidak mendukung pemutaran video.
-              </video>
+            <div className="mx-auto my-16 w-full max-w-[min(340px,86vw)]">
+              <div className="relative aspect-[9/16] w-full overflow-hidden rounded-3xl border border-white/20 bg-card/70 shadow-2xl backdrop-blur-xl">
+                <video
+                  src={SUPABASE_PUBLIC_VIDEO_URL}
+                  controls
+                  playsInline
+                  preload="metadata"
+                  className="h-full w-full rounded-[22px] bg-background object-cover"
+                >
+                  Browser kamu tidak mendukung pemutaran video.
+                </video>
+              </div>
             </div>
           </Reveal>
 
