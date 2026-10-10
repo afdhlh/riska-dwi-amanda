@@ -177,16 +177,7 @@ function Index() {
 
           <Reveal>
             <div className="mx-auto my-16 w-full max-w-[min(340px,86vw)]">
-              <div className="relative w-full aspect-[9/16] rounded-3xl border border-white/20 shadow-2xl overflow-hidden bg-black/40 backdrop-blur-md">
-                <iframe
-                  src={YOUTUBE_EMBED_URL}
-                  title="Video Romantis Riska"
-                  className="w-full h-full rounded-3xl"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  style={{ border: 0 }}
-                ></iframe>
-              </div>
+              <VideoPlayer />
             </div>
           </Reveal>
 
