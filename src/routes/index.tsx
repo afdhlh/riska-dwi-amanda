@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 
 const VIDEO_URL =
-  "https://iwrzrhzudouhsubndord.supabase.co/storage/v1/object/public/video-romantis/Romatis.mp4";
+  "https://www.dropbox.com/scl/fi/sj16civ8utpbs90xds6ir/Romantis.MOV?rlkey=7mx1ke7ke1i7psumk7ju3gt27&st=dllx0pna&raw=1";
 
 export const Route = createFileRoute("/")({
   head: () => ({
