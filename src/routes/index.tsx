@@ -1,8 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 
-const SUPABASE_PUBLIC_VIDEO_URL =
-  "https://iwrzrhzudouhsubndord.supabase.co/storage/v1/object/public/video-romantis/Romatis.mp4";
+const DRIVE_VIDEO_EMBED_URL =
+  "https://drive.google.com/file/d/12m09DNwHCTKmQGYp-_508yg9Z0enDXL6/preview";
 
 export const Route = createFileRoute("/")({
   head: () => ({
