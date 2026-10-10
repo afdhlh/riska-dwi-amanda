@@ -1,8 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 
-const DRIVE_VIDEO_EMBED_URL =
-  "https://drive.google.com/file/d/12m09DNwHCTKmQGYp-_508yg9Z0enDXL6/preview";
+const YOUTUBE_EMBED_URL =
+  "https://www.youtube.com/embed/dquxQwRXLrg?rel=0&modestbranding=1&playsinline=1";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -179,10 +179,11 @@ function Index() {
             <div className="mx-auto my-16 w-full max-w-[min(340px,86vw)]">
               <div className="relative aspect-[9/16] w-full overflow-hidden rounded-3xl border border-white/20 bg-card/70 shadow-2xl backdrop-blur-xl">
                 <iframe
-                  src={DRIVE_VIDEO_EMBED_URL}
-                  title="Video untuk Riska Dwi Amanda"
+                  src={YOUTUBE_EMBED_URL}
+                  title="Video Romantis Riska"
                   className="h-full w-full border-0"
-                  allow="autoplay"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
                   loading="lazy"
                 />
               </div>
