@@ -178,15 +178,13 @@ function Index() {
           <Reveal>
             <div className="mx-auto my-16 w-full max-w-[min(340px,86vw)]">
               <div className="relative aspect-[9/16] w-full overflow-hidden rounded-3xl border border-white/20 bg-card/70 shadow-2xl backdrop-blur-xl">
-                <video
-                  src={SUPABASE_PUBLIC_VIDEO_URL}
-                  controls
-                  playsInline
-                  preload="metadata"
-                  className="h-full w-full rounded-[22px] bg-background object-cover"
-                >
-                  Browser kamu tidak mendukung pemutaran video.
-                </video>
+                <iframe
+                  src={DRIVE_VIDEO_EMBED_URL}
+                  title="Video untuk Riska Dwi Amanda"
+                  className="h-full w-full border-0"
+                  allow="autoplay"
+                  loading="lazy"
+                />
               </div>
             </div>
           </Reveal>
